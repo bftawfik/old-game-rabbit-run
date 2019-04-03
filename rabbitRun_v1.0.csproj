@@ -1,0 +1,188 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2574F603-4B6C-4A30-BFDD-E3BC09EEDFDF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TypeScriptHTMLApp1</RootNamespace>
+    <AssemblyName>TypeScriptHTMLApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\bitmapFonts\nayupixelRegular\nayupixelRegular.png" />
+    <Content Include="assets\imgs\allLevels\ALS_Bullet.png" />
+    <Content Include="assets\imgs\allLevels\ALS_CoinSprite.png" />
+    <Content Include="assets\imgs\allLevels\ALS_HeartIcon.png" />
+    <Content Include="assets\imgs\allLevels\ALS_Player.png" />
+    <Content Include="assets\imgs\allLevels\bunnySprite1.png" />
+    <Content Include="assets\imgs\allLevels\ALS_CarrotIcon0.png" />
+    <Content Include="assets\imgs\allLevels\ALS_CoinIcon0.png" />
+    <Content Include="assets\imgs\level1\L1_Snake.png" />
+    <Content Include="assets\imgs\level1\L1_Tiles.png" />
+    <Content Include="assets\imgs\level1\L1_Turtle.png" />
+    <Content Include="assets\imgs\level1\level1_bg.jpg" />
+    <Content Include="assets\imgs\LS\LS_HelpBtn.png" />
+    <Content Include="assets\imgs\LS\LS_Level1Btn.png" />
+    <Content Include="assets\imgs\LS\LS_Level2Btn.png" />
+    <Content Include="assets\imgs\LS\LS_Level3Btn.png" />
+    <Content Include="assets\imgs\LS\LS_Level4Btn.png" />
+    <Content Include="assets\imgs\LS\LS_Level5Btn.png" />
+    <Content Include="assets\imgs\LS\LS_Level6Btn.png" />
+    <Content Include="assets\imgs\LS\LS_Level7Btn.png" />
+    <Content Include="assets\imgs\LS\LS_Level8Btn.png" />
+    <Content Include="assets\imgs\LS\LS_LevelStars.png" />
+    <Content Include="assets\imgs\LS\LS_SettingsBtn.png" />
+    <Content Include="assets\imgs\pallets\HP\HP_Bg0.png" />
+    <Content Include="assets\imgs\pallets\HP\HP_CloseBtn.png" />
+    <Content Include="assets\imgs\pallets\tempGO\GO_ExitBtn.png" />
+    <Content Include="assets\imgs\pallets\tempGO\GO_PlayAgainBtn.png" />
+    <Content Include="assets\imgs\pallets\tempGO\GO_Bg.jpg" />
+    <Content Include="assets\imgs\SS\SS_Bg0.jpg" />
+    <Content Include="assets\imgs\SS\SS_HelpBtn.png" />
+    <Content Include="assets\imgs\SS\SS_PlayBtn.png" />
+    <Content Include="assets\imgs\SS\SS_SettingsBtn.png" />
+    <Content Include="assets\maps\L1_Map\L1_Map.json" />
+    <Content Include="assets\maps\L1_Map\L1_Map.tmx" />
+    <Content Include="assets\maps\L1_Map_Aya_10092017_1611\L1_Map_Aya_10092017_1611.json" />
+    <Content Include="assets\maps\L1_Map_Aya_10092017_1611\L1_Map_Aya_10092017_1611.tmx" />
+    <Content Include="assets\fonts\bitmapFonts\nayupixelRegular\nayupixelRegular.fnt" />
+    <Content Include="assets\maps\L1_Map_Aya_15102017_1102\L1_Map_Aya_15102017_1102.tmx" />
+    <Content Include="assets\maps\L1_Map_Aya_15102017_1102\L1_Map_Aya_15102017_1102.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <Content Include="assets\imgs\main\orient.jpg" />
+    <Content Include="assets\imgs\main\preloaderBar0.png" />
+    <Content Include="assets\imgs\main\preloaderBar1.png" />
+    <Content Include="assets\imgs\main\preloaderBg.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Bg.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Bg0.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_HelpBtn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level1Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level2Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level3Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level4Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level5Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level6Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level7Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_Level8Btn.jpg" />
+    <Content Include="assets\imgs\tempLS\LS_SettingsBtn.jpg" />
+    <Content Include="assets\imgs\tempSS\SS_HelpBtn.jpg" />
+    <Content Include="assets\imgs\tempSS\SS_PlayBtn.jpg" />
+    <Content Include="assets\imgs\tempSS\SS_SettingsBtn.jpg" />
+    <Content Include="assets\imgs\tempSS\SS_Bg.jpg" />
+    <Content Include="assets\imgs\tempSS\SS_Bg0.jpg" />
+    <Content Include="assets\imgs\pallets\tempHP\HP_CloseBtn.jpg" />
+    <Content Include="assets\imgs\pallets\tempHP\HP_Bg.jpg" />
+    <Content Include="assets\imgs\pallets\tempHP\HP_Bg0.jpg" />
+    <Content Include="assets\imgs\pallets\tempSP\SP_CloseBtn.jpg" />
+    <Content Include="assets\imgs\pallets\tempSP\SP_MusicBtn.jpg" />
+    <Content Include="assets\imgs\pallets\tempSP\SP_ResetScoreBtn.jpg" />
+    <Content Include="assets\imgs\pallets\tempSP\SP_SoundBtn.jpg" />
+    <Content Include="assets\imgs\pallets\tempSP\SP_Bg.jpg" />
+    <Content Include="assets\imgs\pallets\tempSP\SP_Bg0.jpg" />
+    <Content Include="index.html" />
+    <Content Include="phaser.js" />
+    <Content Include="phaser.min.js" />
+    <TypeScriptCompile Include="constants.ts" />
+    <TypeScriptCompile Include="states\level1Preloader.ts" />
+    <TypeScriptCompile Include="states\level1Screen.ts" />
+    <TypeScriptCompile Include="states\levelsScreen.ts" />
+    <TypeScriptCompile Include="states\startScreen.ts" />
+    <TypeScriptCompile Include="states\mainPreloader.ts" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="app_orginal.ts" />
+    <TypeScriptCompile Include="p2.d.ts" />
+    <TypeScriptCompile Include="phaser.d.ts" />
+    <TypeScriptCompile Include="pixi.d.ts" />
+    <TypeScriptCompile Include="states\boot.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10202</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10202/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
